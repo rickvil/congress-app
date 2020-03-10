@@ -1,5 +1,7 @@
 {
   "name": "congress",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
