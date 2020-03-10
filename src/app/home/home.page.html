@@ -14,14 +14,14 @@
   <ion-grid>
 
     <ion-row>
-      <ion-col col-6>
+      <ion-col col-6 (click)="goSpeakers()">
         <ion-card class="ion-text-center ion-padding" color="danger">
           <ion-icon name="people"></ion-icon>
           <h2 text-center>Disertantes</h2>
         </ion-card>
       </ion-col>
 
-      <ion-col col-6>
+      <ion-col col-6 (click)="goCredential()">
         <ion-card class="ion-text-center ion-padding" color="danger">
           <ion-icon name="barcode"></ion-icon>
           <h2 text-center>Credencial</h2>
