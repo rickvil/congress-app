@@ -30,14 +30,14 @@
     </ion-row>
 
     <ion-row>
-      <ion-col col-6>
+      <ion-col col-6 (click)="goActivities()">
         <ion-card class="ion-text-center ion-padding" color="danger">
           <ion-icon name="list"></ion-icon>
           <h2 text-center>Actividad</h2>
         </ion-card>
       </ion-col>
 
-      <ion-col col-6>
+      <ion-col col-6 (click)="goOrganizers()">
         <ion-card class="ion-text-center ion-padding" color="danger">
           <ion-icon name="briefcase"></ion-icon>
           <h2 text-center>Organizador</h2>
@@ -46,14 +46,14 @@
     </ion-row>
 
     <ion-row>
-      <ion-col col-6>
+      <ion-col col-6 (click)="goHotels()">
         <ion-card class="ion-text-center ion-padding" color="danger">
           <ion-icon name="home"></ion-icon>
           <h2 text-center>Hoteles</h2>
         </ion-card>
       </ion-col>
 
-      <ion-col col-6>
+      <ion-col col-6 (click)="goRestaurant()">
         <ion-card class="ion-text-center ion-padding" color="danger">
           <ion-icon name="restaurant"></ion-icon>
           <h2 text-center>Restaurant</h2>

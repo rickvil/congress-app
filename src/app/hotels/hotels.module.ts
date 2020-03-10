@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { HotelsPageRoutingModule } from './hotels-routing.module';
 
 import { HotelsPage } from './hotels.page';
+import {ExploreContainerComponentModule} from '../explore-container/explore-container.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ExploreContainerComponentModule,
     HotelsPageRoutingModule
   ],
   declarations: [HotelsPage]

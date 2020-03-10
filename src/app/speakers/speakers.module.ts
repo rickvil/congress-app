@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { SpeakersPageRoutingModule } from './speakers-routing.module';
 
 import { SpeakersPage } from './speakers.page';
+import {ExploreContainerComponentModule} from '../explore-container/explore-container.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ExploreContainerComponentModule,
     SpeakersPageRoutingModule
   ],
   declarations: [SpeakersPage]

@@ -7,12 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { OrganizersPageRoutingModule } from './organizers-routing.module';
 
 import { OrganizersPage } from './organizers.page';
+import {ExploreContainerComponentModule} from '../explore-container/explore-container.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ExploreContainerComponentModule,
     OrganizersPageRoutingModule
   ],
   declarations: [OrganizersPage]

@@ -11,11 +11,27 @@ export class HomePage {
   constructor(private router: Router) {}
 
 
-  goSpeakers(){
+  goSpeakers() {
     this.router.navigate(['speakers']);
   }
 
-  goCredential(){
+  goCredential() {
     this.router.navigate(['credential']);
+  }
+
+  goOrganizers() {
+    this.router.navigate(['organizers']);
+  }
+
+  goHotels() {
+    this.router.navigate(['hotels']);
+  }
+
+  goRestaurant() {
+    this.router.navigate(['restaurant']);
+  }
+
+  goActivities() {
+    this.router.navigate(['activities']);
   }
 }
