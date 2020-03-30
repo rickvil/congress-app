@@ -10,5 +10,16 @@
 </ion-header>
 
 <ion-content>
-  <app-explore-container name="Listado de Disertantes"></app-explore-container>
+  <ion-card *ngFor="let data of [0,1,2,3,4,5]" style="background-color: aliceblue">
+    <img src="{{ 'https://picsum.photos/400/200?t='.concat(data.toString()) }}"/>
+    <ion-card-header>
+      <ion-card-subtitle>18:30 - 19:30</ion-card-subtitle>
+      <ion-card-title>Ricardo Vilte</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Nuevas formas de atender los males del corazon, desde una perspectiva informatica y todo los detalles
+      de los tratamientos en nanotecnologia
+    </ion-card-content>
+  </ion-card>
 </ion-content>
