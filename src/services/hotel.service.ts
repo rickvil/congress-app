@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import { CustomHttpService } from '../providers/api/custom-http.service';
 import { appConfig as APP } from '../app/app.config';
-import {Organizer} from '../models/organizer.model';
+import {Hotel} from '../models/hotel.model';
 
 @Injectable({
     providedIn: 'root',
 })
-export class OrganizerService {
+export class HotelService {
     constructor(private customHttpService: CustomHttpService) {}
 
-    public getAllOrganizers() {
-        return this.customHttpService.get(APP.endpoints.organizers).then((data) => {
-            return  data.organizers.map((organizer) => new Organizer(organizer));
+    public getAllHotels() {
+        return this.customHttpService.get(APP.endpoints.hotels).then((data) => {
+            return  data.hotels.map((hotel) => new Hotel(hotel));
         });
     }
 }

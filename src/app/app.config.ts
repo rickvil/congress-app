@@ -3,6 +3,7 @@ export const appConfig = {
     endpoints: {
         speakers: '/speakers',
         activities: '/activities',
-        organizers: '/organizers'
+        organizers: '/organizers',
+        hotels: '/hotels'
     }
 };
