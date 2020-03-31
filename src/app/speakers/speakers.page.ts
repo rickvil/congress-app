@@ -18,8 +18,4 @@ export class SpeakersPage implements OnInit {
       this.speakers = speakers;
     });
   }
-
-  getStringRandom() {
-    return (Math.floor(Math.random() * 100)).toString();
-  }
 }

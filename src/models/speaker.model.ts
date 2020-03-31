@@ -1,14 +1,12 @@
 export class Speaker {
     public name: string;
-    public schedule: string;
-    public topic: string;
+    public description: string;
     public image: string;
 
     constructor(data: any) {
         if (data) {
             this.name = data.name;
-            this.schedule = data.schedule;
-            this.topic = data.topic;
+            this.description = data.description;
             this.image = data.image;
         }
     }

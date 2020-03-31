@@ -13,12 +13,11 @@
   <ion-card *ngFor="let speaker of speakers; let i = index" style="background-color: aliceblue">
     <img src="{{ speaker.image + '?random=' + i}}"/>
     <ion-card-header>
-      <ion-card-subtitle>{{speaker.schedule}}</ion-card-subtitle>
       <ion-card-title>{{speaker.name}}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
-      {{speaker.topic}}
+      {{speaker.description}}
     </ion-card-content>
   </ion-card>
 </ion-content>
