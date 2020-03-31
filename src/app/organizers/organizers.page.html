@@ -10,14 +10,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-card *ngFor="let organizer of organizers; let i = index" style="background-color: aliceblue">
-    <img src="{{ organizer.image + '?random=2' + i}}"/>
-    <ion-card-header>
-      <ion-card-title>{{organizer.name}}</ion-card-title>
-    </ion-card-header>
-
-    <ion-card-content>
-      {{organizer.description}}
-    </ion-card-content>
-  </ion-card>
+  <ion-slides style="padding-bottom: 30px" pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let organizer of organizers; let i = index">
+      <ion-card style="background-color: aliceblue">
+        <img src="{{ organizer.image + '?random=2' + i}}"/>
+        <ion-card-header>
+          <ion-card-title>{{organizer.name}}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          {{organizer.description}}
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
 </ion-content>

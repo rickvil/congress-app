@@ -8,7 +8,10 @@ import {OrganizerService} from '../../services/organizer.service';
   styleUrls: ['./organizers.page.scss'],
 })
 export class OrganizersPage implements OnInit {
-
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400
+  };
   public organizers: Array<Organizer>;
 
   constructor(private organizerService: OrganizerService) { }

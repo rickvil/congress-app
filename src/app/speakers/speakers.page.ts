@@ -8,7 +8,10 @@ import {Speaker} from '../../models/speaker.model';
   styleUrls: ['./speakers.page.scss'],
 })
 export class SpeakersPage implements OnInit {
-
+  slideOpts = {
+    initialSlide: 1,
+    speed: 400
+  };
   public speakers: Array<Speaker>;
 
   constructor(private speakerService: SpeakerService) { }
