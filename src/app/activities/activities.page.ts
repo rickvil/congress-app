@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Activity} from '../../models/activity.model';
+import {ActivityService} from '../../services/activity.service';
 
 @Component({
   selector: 'app-activities',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivitiesPage implements OnInit {
 
-  constructor() { }
+  public activities: Array<Activity>;
+
+  constructor(private activityService: ActivityService) { }
 
   ngOnInit() {
+    this.activityService.getAllActivities().then((activities) => {
+      this.activities = activities;
+    });
   }
-
 }

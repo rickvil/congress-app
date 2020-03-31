@@ -10,5 +10,16 @@
 </ion-header>
 
 <ion-content>
-  <app-explore-container name="Listado de Actividades"></app-explore-container>
+  <ion-list>
+    <ion-item *ngFor="let activity of activities; let i = index">
+      <ion-avatar slot="start">
+        <img src="{{activity.image + '?t' + i}}">
+      </ion-avatar>
+      <ion-label class="ion-text-wrap">
+        <p>{{activity.schedule}}</p>
+        <h2>{{activity.name}}</h2>
+        <p>{{activity.topic}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
