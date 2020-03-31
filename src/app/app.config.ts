@@ -4,6 +4,7 @@ export const appConfig = {
         speakers: '/speakers',
         activities: '/activities',
         organizers: '/organizers',
-        hotels: '/hotels'
+        hotels: '/hotels',
+        restaurants: '/restaurants'
     }
 };

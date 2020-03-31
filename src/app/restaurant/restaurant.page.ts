@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Restaurant} from '../../models/restaurant.model';
+import {RestaurantService} from '../../services/restaurant.service';
 
 @Component({
   selector: 'app-restaurant',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantPage implements OnInit {
 
-  constructor() { }
+  public restaurants: Array<Restaurant>;
+
+  constructor(private restaurantService: RestaurantService) { }
 
   ngOnInit() {
+    this.restaurantService.getAllRestaurants().then((restaurants) => {
+      this.restaurants = restaurants;
+    });
   }
-
 }

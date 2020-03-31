@@ -10,5 +10,14 @@
 </ion-header>
 
 <ion-content>
-  <app-explore-container name="Listado de Restaurants"></app-explore-container>
+  <ion-card *ngFor="let restaurant of restaurants; let i = index" style="background-color: aliceblue">
+    <img src="{{ restaurant.image + '?random=' + i}}"/>
+    <ion-card-header>
+      <ion-card-title>{{restaurant.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{restaurant.address}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
