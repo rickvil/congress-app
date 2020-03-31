@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SpeakerService} from '../../services/speaker.service';
+import {Speaker} from '../../models/speaker.model';
 
 @Component({
   selector: 'app-speakers',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpeakersPage implements OnInit {
 
-  constructor() { }
+  public speakers: Array<Speaker>;
+
+  constructor(private speakerService: SpeakerService) { }
 
   ngOnInit() {
+    this.speakerService.getAllSpeakers().then((speakers) => {
+      this.speakers = speakers;
+    });
   }
 
+  getStringRandom() {
+    return (Math.floor(Math.random() * 100)).toString();
+  }
 }
