@@ -11,7 +11,7 @@
 
 <ion-content>
   <ion-card *ngFor="let hotel of hotels; let i = index" style="background-color: aliceblue">
-    <img src="{{ hotel.image + '?random=' + i}}"/>
+    <img src="{{ hotel.image + '?random=1' + i}}"/>
     <ion-card-header>
       <ion-card-title>{{hotel.name}}</ion-card-title>
     </ion-card-header>

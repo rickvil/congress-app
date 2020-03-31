@@ -11,7 +11,7 @@
 
 <ion-content>
   <ion-card *ngFor="let organizer of organizers; let i = index" style="background-color: aliceblue">
-    <img src="{{ organizer.image + '?random=' + i}}"/>
+    <img src="{{ organizer.image + '?random=2' + i}}"/>
     <ion-card-header>
       <ion-card-title>{{organizer.name}}</ion-card-title>
     </ion-card-header>

@@ -11,7 +11,7 @@
 
 <ion-content>
   <ion-card *ngFor="let speaker of speakers; let i = index" style="background-color: aliceblue">
-    <img src="{{ speaker.image + '?random=' + i}}"/>
+    <img src="{{ speaker.image + '?random=4' + i}}"/>
     <ion-card-header>
       <ion-card-title>{{speaker.name}}</ion-card-title>
     </ion-card-header>
