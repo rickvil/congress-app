@@ -13,7 +13,7 @@
   <ion-slides style="padding-bottom: 30px" pager="true" [options]="slideOpts">
     <ion-slide *ngFor="let speaker of speakers; let i = index">
       <ion-card style="background-color: aliceblue">
-        <img src="{{ speaker.image + '?random=2' + i}}"/>
+        <img src="{{ speaker.image + '?random=4' + i}}"/>
         <ion-card-header>
           <ion-card-title>{{speaker.name}}</ion-card-title>
         </ion-card-header>
