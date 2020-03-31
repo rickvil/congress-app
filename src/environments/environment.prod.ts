@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiGatewayURL: 'http://demo2962383.mockable.io'
 };
