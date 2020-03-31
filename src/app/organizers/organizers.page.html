@@ -10,5 +10,14 @@
 </ion-header>
 
 <ion-content>
-  <app-explore-container name="Listado de Organizadores"></app-explore-container>
+  <ion-card *ngFor="let organizer of organizers; let i = index" style="background-color: aliceblue">
+    <img src="{{ organizer.image + '?random=' + i}}"/>
+    <ion-card-header>
+      <ion-card-title>{{organizer.name}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      {{organizer.description}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>

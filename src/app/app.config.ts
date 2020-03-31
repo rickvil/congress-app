@@ -2,6 +2,7 @@ export const appConfig = {
     // Endpoints:
     endpoints: {
         speakers: '/speakers',
-        activities: '/activities'
+        activities: '/activities',
+        organizers: '/organizers'
     }
 };

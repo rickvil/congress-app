@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Organizer} from '../../models/organizer.model';
+import {OrganizerService} from '../../services/organizer.service';
 
 @Component({
   selector: 'app-organizers',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizersPage implements OnInit {
 
-  constructor() { }
+  public organizers: Array<Organizer>;
+
+  constructor(private organizerService: OrganizerService) { }
 
   ngOnInit() {
+    this.organizerService.getAllOrganizers().then((organizers) => {
+      this.organizers = organizers;
+    });
   }
-
 }
